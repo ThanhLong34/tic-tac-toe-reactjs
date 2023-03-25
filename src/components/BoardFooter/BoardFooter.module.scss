@@ -1,0 +1,9 @@
+@use '@/assets/styles/variables.scss' as *;
+
+.winner {
+	text-align: center;
+	margin-top: 10px;
+	color: $primaryColor;
+	font-size: 2.4rem;
+	font-weight: bold;
+}

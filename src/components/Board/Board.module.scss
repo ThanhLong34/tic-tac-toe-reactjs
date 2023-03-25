@@ -16,30 +16,6 @@
 .table {
 	width: 100%;
 	margin: 0 -4px;
-}
-
-.row {
-	display: flex;
-}
-
-.col {
-	margin: 4px;
-}
-
-.button {
-	display: inline-block;
-	background-color: inherit;
-	border: 2px solid transparent;
-	text-align: center;
-	width: 65px;
-	height: 65px;
-	font-size: 3rem;
-	line-height: 65px;
-	transition: all 0.3s;
-	border-radius: 3px;
-	box-shadow: rgba($secondaryColor, 0.2) 0px 8px 24px;
-
-	&:hover {
-		border-color: $primaryColor;
-	}
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
