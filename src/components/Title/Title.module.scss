@@ -1,0 +1,7 @@
+@use '@/assets/styles/variables.scss' as *;
+
+.title {
+	color: $primaryColor;
+	font-size: 3rem;
+	text-align: center;
+}
