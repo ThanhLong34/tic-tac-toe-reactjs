@@ -1,0 +1,91 @@
+// Đặt @use trước @import
+@use "./variables.scss" as *;
+@import "normalize.css";
+
+/*? RESET STYLE */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	font-size: 62.5%;
+	background-color: white;
+	color: $textColor;
+	-webkit-text-size-adjust: 100%;
+	height: 100%;
+	min-height: 100% !important;
+	/* //! Lưu ý: tính năng này chỉ hoạt động khi chức năng Smooth Scrolling trên trình duyệt đã được Enabled */
+	/* //* Truy cập: chrome://flags/#smooth-scrolling */
+	scroll-behavior: smooth; /* cuộn trang mượt hơn */
+	/* //! caution: this property is experimental */
+	/* appearance: none; //* định dạng cho thành phần trông như giao diện chuẩn gần với người dùng */
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	text-rendering: optimizeSpeed;
+	overflow-x: hidden;
+	height: 100%;
+	min-height: 100% !important;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	color: $textColor;
+}
+
+button,
+input,
+textarea,
+select {
+	outline: none;
+	border: none;
+	-webkit-tap-highlight-color: transparent;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	font-weight: 500;
+	color: inherit;
+}
+
+input,
+textarea,
+select {
+	border: 1px solid $borderColor;
+	caret-color: $caretColor;
+	display: block;
+}
+
+button {
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+}
+
+address {
+	font-style: normal;
+}
